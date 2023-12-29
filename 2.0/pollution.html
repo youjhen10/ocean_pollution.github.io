@@ -7,30 +7,19 @@
     <!--reset-->
     <link href="./css/reset.css" />
     <!--bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <!--arrow-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link rel="stylesheet" href="./css/arrow.css" />
     <!--noto sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link href="./css/noto_sans.css" rel="stylesheet" />
     <link href="./css/textguide.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
     <!--burger menu-->
-    <button type="button" class="btn-nav">
+    <!-- <button type="button" class="btn-nav">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="88"
@@ -56,7 +45,7 @@
           />
         </g>
       </svg>
-    </button>
+    </button> -->
     <!--green backgrund-->
     <div class="bg-green" style="position: absolute">
       <img src="./img/2.0_background.png" />
@@ -129,50 +118,56 @@
         </a>
       </div>
       <!--你也能這樣做群組開始-->
-      <div class="todo">
-        <!--標題-->
-        <h2>你也可以這樣做 !</h2>
-        <!--條列式副標-->
-        <div class="todo-all">
+      <div class="row">
+        <div class="todo">
+          <!--標題-->
           <div class="col-6">
-            <div class="circle-1">
-              <img src="./img/2.0_circle/circle-1.png" />
-              <h3>清除手邊垃圾</h3>
-            </div>
-            <div class="circle-2">
-              <img src="./img/2.0_circle/circle-2.png" />
-              <h3>只觀看不觸摸</h3>
-            </div>
-            <div class="circle-3">
-              <img src="./img/2.0_circle/circle-3.png" />
-              <h3>限制塑膠製品的使用</h3>
-            </div>
-            <div class="circle-4">
-              <img src="./img/2.0_circle/circle-4.png" />
-              <h3>選擇環保海鮮</h3>
-            </div>
-            <div class="circle-5">
-              <img src="./img/2.0_circle/circle-5.png" />
-              <h3>一起為環境採取行動</h3>
-            </div>
-            <div class="circle-6">
-              <img src="./img/2.0_circle/circle-6.png" />
-              <h3>減少碳足跡</h3>
-            </div>
-            <div class="circle-7">
-              <img src="./img/2.0_circle/circle-7.png" />
-              <h3>查看購買的商品！</h3>
-            </div>
+            <h2>你也可以這樣做 !</h2>
           </div>
-          <!--條列式内容-->
-          <div class="col-8 offset-1">
-            <h5>垃圾隨手撿起來！</h5>
-            <h5>不去打擾海洋生物 !</h5>
-            <h5>減少購買塑膠包裝或過度包裝的商品 !</h5>
-            <h5>經常食用海鮮嗎？請留意這些海鮮的來源 !</h5>
-            <h5>參與環保行動 !</h5>
-            <h5>選擇走路、騎自行車或節能的交通工具 !</h5>
-            <h5>注意由瀕臨絕種的海洋物種製成的商品 !</h5>
+          <!--條列式副標-->
+          <div class="col-12">
+            <div class="todo-all">
+              <div class="col-5">
+                <div class="circle-1">
+                  <img src="./img/2.0_circle/circle-1.png" />
+                  <h3>清除手邊垃圾</h3>
+                </div>
+                <div class="circle-2">
+                  <img src="./img/2.0_circle/circle-2.png" />
+                  <h3>只觀看不觸摸</h3>
+                </div>
+                <div class="circle-3">
+                  <img src="./img/2.0_circle/circle-3.png" />
+                  <h3>限制塑膠製品的使用</h3>
+                </div>
+                <div class="circle-4">
+                  <img src="./img/2.0_circle/circle-4.png" />
+                  <h3>選擇環保海鮮</h3>
+                </div>
+                <div class="circle-5">
+                  <img src="./img/2.0_circle/circle-5.png" />
+                  <h3>一起為環境採取行動</h3>
+                </div>
+                <div class="circle-6">
+                  <img src="./img/2.0_circle/circle-6.png" />
+                  <h3>減少碳足跡</h3>
+                </div>
+                <div class="circle-7">
+                  <img src="./img/2.0_circle/circle-7.png" />
+                  <h3>查看購買的商品！</h3>
+                </div>
+              </div>
+              <!--條列式内容-->
+              <div class="col-8 offset-1">
+                <h5>垃圾隨手撿起來！</h5>
+                <h5>不去打擾海洋生物 !</h5>
+                <h5>減少購買塑膠包裝或過度包裝的商品 !</h5>
+                <h5>經常食用海鮮嗎？請留意這些海鮮的來源 !</h5>
+                <h5>參與環保行動 !</h5>
+                <h5>選擇走路、騎自行車或節能的交通工具 !</h5>
+                <h5>注意由瀕臨絕種的海洋物種製成的商品 !</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -189,8 +184,6 @@
       </button>
     </a>
     <!--連結至3.0d=的link群組結束-->
-    <div class="footer">
-      <img src="./img/2.0_footer.png" />
-    </div>
+    <footer></footer>
   </body>
 </html>

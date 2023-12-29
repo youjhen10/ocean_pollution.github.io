@@ -9,18 +9,18 @@ dd,
 ul,
 ol,
 li,
-/* h1,
+h1,
 h2,
 h3,
 h4,
 h5,
-h6, */
+h6,
 pre,
 form,
 fieldset,
 input,
 textarea,
-/* p, */
+p,
 blockquote,
 th,
 td {
@@ -58,11 +58,22 @@ ul {
   margin: 0;
   padding: 0;
 }
-/* caption,
+caption,
 th {
   text-align: left;
-} */
-
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
 q:before,
 q:after {
   content: "";
@@ -74,31 +85,31 @@ acronym {
 
 /* Custom CSS
  * --------------------------------------- */
-/* body {
+body {
   font-family: arial, helvetica;
   color: #333;
   color: rgba(0, 0, 0, 0.5);
-} */
+}
 .wrap {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   position: relative;
 }
-/* h1 {
+h1 {
   font-size: 6em;
 }
 p {
   font-size: 2em;
-} */
-/* .intro p {
+}
+.intro p {
   width: 50%;
   margin: 0 auto;
   font-size: 1.5em;
-} */
-/* .section {
+}
+.section {
   text-align: center;
-} */
+}
 #menu li {
   display: inline-block;
   margin: 10px;
@@ -292,4 +303,23 @@ p {
   background: rgba(255, 255, 255, 0.7);
   padding: 0px 5px;
   line-height: 25px;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1 {
+  font-size: 5em;
+  font-family: arial, helvetica;
+  color: #000;
+  margin: 0;
+}
+.section p,
+.intro p {
+  color: #000;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+  text-align: center;
 }
