@@ -1,81 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage very simple demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,simple" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <!--noto sans-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link href="./css/noto_sans.css" rel="stylesheet" />
+    <link href="./css/textguide.css" rel="stylesheet" />
+    <!--bootstrap-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <!-- full page -->
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/examples.css" />
+    <!-- main css -->
     <link rel="stylesheet" href="./20231211_main.css" />
   </head>
   <body>
     <!--hamburger button-->
-    <button type="button" class="btn_nav">
+    <!-- <button type="button" class="btn_nav">
       <span class="material-symbols-rounded nav_icon"
         ><img src="./img/dehaze.png"
       /></span>
-    </button>
-    <!--scroller 1-->
-    <div class="scroller" data-direction="right" data-speed="slow">
-      <div class="scroller__inner tag-list">
-        <div class="fish_item fish_xl">
-          <img src="./img/fish_xl_01.png" class="f fxl01" />
-          <img src="./img/fish_xl_02.png" class="f fxl02" />
-          <img src="./img/fish_xl_03.png" class="f fxl03" />
-        </div>
-        <div class="fish_item fish_m">
-          <img src="./img/fish_m_01.png" class="f fm01" />
-          <img src="./img/fish_m_02.png" class="f fm02" />
-          <img src="./img/fish_m_03.png" class="f fm03" />
-        </div>
-        <div class="fish_item fish_s">
-          <img src="./img/fish_s_01.png" class="f fs01" />
-          <img src="./img/fish_s_02.png" class="f fs02" />
-          <img src="./img/fish_s_03.png" class="f fs03" />
+    </button> -->
+    <div id="fullpage">
+      <div class="section active" id="section0">
+        <!--scroller 1-->
+        <div class="animation">
+          <div class="scroller" data-direction="right" data-speed="slow">
+            <div class="scroller__inner tag-list">
+              <div class="fish_item fish_xl">
+                <img src="./img/fish_xl_01.png" class="f fxl01" />
+                <img src="./img/fish_xl_02.png" class="f fxl02" />
+                <img src="./img/fish_xl_03.png" class="f fxl03" />
+              </div>
+              <div class="fish_item fish_m">
+                <img src="./img/fish_m_01.png" class="f fm01" />
+                <img src="./img/fish_m_02.png" class="f fm02" />
+                <img src="./img/fish_m_03.png" class="f fm03" />
+              </div>
+              <div class="fish_item fish_s">
+                <img src="./img/fish_s_01.png" class="f fs01" />
+                <img src="./img/fish_s_02.png" class="f fs02" />
+                <img src="./img/fish_s_03.png" class="f fs03" />
+              </div>
+            </div>
+          </div>
+
+          <!--name-->
+          <div class="name">
+            <img src="./img/homepage_title.png" />
+          </div>
+          <!--scroller 2-->
+          <div
+            class="scroller scroller_02"
+            data-direction="left"
+            data-speed="slow"
+          >
+            <div class="scroller__inner tag-list">
+              <div class="fish_item fish_xl">
+                <img src="./img/fish_xl_01.png" class="f fxl01" />
+                <img src="./img/fish_xl_02.png" class="f fxl02" />
+                <img src="./img/fish_xl_03.png" class="f fxl03" />
+              </div>
+              <div class="fish_item fish_m">
+                <img src="./img/fish_m_01.png" class="f fm01" />
+                <img src="./img/fish_m_02.png" class="f fm02" />
+                <img src="./img/fish_m_03.png" class="f fm03" />
+              </div>
+              <div class="fish_item fish_s">
+                <img src="./img/fish_s_01.png" class="f fs01" />
+                <img src="./img/fish_s_02.png" class="f fs02" />
+                <img src="./img/fish_s_03.png" class="f fs03" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!--name-->
-    <div class="name"><h1>O C E A N / P O L L U T I O N</h1></div>
-    <!--scroller 2-->
-    <div class="scroller scroller_02" data-direction="left" data-speed="slow">
-      <div class="scroller__inner tag-list">
-        <div class="fish_item fish_xl">
-          <img src="./img/fish_xl_01.png" class="f fxl01" />
-          <img src="./img/fish_xl_02.png" class="f fxl02" />
-          <img src="./img/fish_xl_03.png" class="f fxl03" />
+
+      <div class="section" id="section1">
+        <!--index-->
+        <div class="container">
+          <div class="row">
+            <div class="index-intro">
+              <div class="col-8 offset-2">
+                <div class="intro">
+                  <!--title-->
+                  <div class="title">
+                    <h2>I N T R O</h2>
+
+                    <img class="title-deco" src="./img/intro-deco.png" />
+                  </div>
+                  <!--intro-->
+                  <div class="text">
+                    <h4>
+                      唯有健康的海洋，才能保有健康的地球，人類也才得以平安地生存。污染海洋生態系統，可能造成物種滅絕，並影響數百萬人的食物安全。有害物質進入食物鏈，對人類健康構成風險，但它們又是如何進入我們的食物鏈並影響人體的呢？
+                    </h4>
+                  </div>
+                  <div class="hook">
+                    <a href="../2.0/pollution.html" target="_blank">
+                      <button type="button" class="btn-hook">
+                        <img src="./img/hook-gif.gif" alt="hook" />
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="fish_item fish_m">
-          <img src="./img/fish_m_01.png" class="f fm01" />
-          <img src="./img/fish_m_02.png" class="f fm02" />
-          <img src="./img/fish_m_03.png" class="f fm03" />
-        </div>
-        <div class="fish_item fish_s">
-          <img src="./img/fish_s_01.png" class="f fs01" />
-          <img src="./img/fish_s_02.png" class="f fs02" />
-          <img src="./img/fish_s_03.png" class="f fs03" />
-        </div>
-      </div>
-    </div>
-    <!--index-->>
-    <div class="index-intro">
-      <div class="intro">
-        <!--title-->
-        <div class="title">
-          <h2>I N T R O</h2>
-        </div>
-        <img class="title-deco" src="./img/intro-deco.png" />
-      </div>
-      <!--intro-->
-      <div class="text">
-        <p>
-          唯有健康的海洋，才能保有健康的地球，人類也才得以平安地生存。污染海洋生態系統，可能造成物種滅絕，並影響數百萬人的食物安全。有害物質進入食物鏈，對人類健康構成風險，但它們又是如何進入我們的食物鏈並影響人體的呢？
-        </p>
-      </div>
-      <div class="hook">
-        <a href="../2.0/pollution.html" target="_blank">
-          <button type="button" class="btn-hook">
-            <img src="./img/hook-gif.gif" alt="hook" />
-          </button>
-        </a>
       </div>
     </div>
 
@@ -129,6 +171,18 @@
       hoverImageChange(".fish_xl", tempXlHover, tempXl);
       hoverImageChange(".fish_m", tempMHover, tempM);
       hoverImageChange(".fish_s", tempSHover, tempS);
+    </script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        // sectionsColor: [
+        //   "#f2f2f2",
+        //   "#4BBFC3",
+        //   "#7BAABE",
+        //   "whitesmoke",
+        //   "#ccddff",
+        // ],
+      });
     </script>
   </body>
 </html>
